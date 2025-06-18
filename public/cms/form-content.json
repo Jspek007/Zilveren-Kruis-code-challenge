@@ -1,0 +1,218 @@
+{
+    "steps": [
+        {
+            "id": "reason",
+            "title": "Reden voor verzekering",
+            "description": "Selecteer de reden waarom u een verzekering wilt afsluiten.",
+            "options": [
+                {
+                    "id": "new",
+                    "label": "Nieuwe verzekering",
+                    "value": "new"
+                },
+                {
+                    "id": "switch",
+                    "label": "Overstappen",
+                    "value": "switch"
+                }
+            ]
+        },
+        {
+            "id": "personal",
+            "title": "Persoonlijke gegevens",
+            "description": "Vul uw persoonlijke gegevens in.",
+            "fields": [
+                {
+                    "id": "firstName",
+                    "label": "Voornaam",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "infix",
+                    "label": "Tussenvoegsel",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "lastName",
+                    "label": "Achternaam",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "gender",
+                    "label": "Geslacht",
+                    "type": "select",
+                    "required": true,
+                    "options": [
+                        {
+                            "id": "male",
+                            "label": "Man",
+                            "value": "male"
+                        },
+                        {
+                            "id": "female",
+                            "label": "Vrouw",
+                            "value": "female"
+                        },
+                        {
+                            "id": "other",
+                            "label": "Anders",
+                            "value": "other"
+                        }
+                    ]
+                },
+                {
+                    "id": "dateOfBirth",
+                    "label": "Geboortedatum",
+                    "type": "date",
+                    "required": true
+                },
+                {
+                    "id": "personalId",
+                    "label": "BSN",
+                    "type": "text",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "id": "insurance",
+            "title": "Verzekeringsopties",
+            "description": "Kies uw verzekeringsopties.",
+            "sections": [
+                {
+                    "id": "base-insurance",
+                    "title": "Basisverzekering",
+                    "description": "Kies uw basisverzekering.",
+                    "options": [
+                        {
+                            "id": "basis-zeker",
+                            "label": "Basis Zeker",
+                            "value": "basis-zeker"
+                        },
+                        {
+                            "id": "basis-plus",
+                            "label": "Basis Plus",
+                            "value": "basis-plus"
+                        },
+                        {
+                            "id": "basis-compleet",
+                            "label": "Basis Compleet",
+                            "value": "basis-compleet"
+                        }
+                    ]
+                },
+                {
+                    "id": "payment-term",
+                    "title": "Betalingsperiode",
+                    "description": "Kies hoe vaak u wilt betalen.",
+                    "options": [
+                        {
+                            "id": "monthly",
+                            "label": "Maandelijks",
+                            "value": "monthly"
+                        },
+                        {
+                            "id": "quarterly",
+                            "label": "Per kwartaal",
+                            "value": "quarterly"
+                        },
+                        {
+                            "id": "yearly",
+                            "label": "Jaarlijks",
+                            "value": "yearly"
+                        }
+                    ]
+                },
+                {
+                    "id": "own-risk",
+                    "title": "Eigen risico",
+                    "description": "Kies uw eigen risico.",
+                    "options": [
+                        {
+                            "id": "358",
+                            "label": "€ 358",
+                            "value": "358"
+                        },
+                        {
+                            "id": "885",
+                            "label": "€ 885",
+                            "value": "885"
+                        }
+                    ],
+                    "dependsOn": "base-insurance"
+                },
+                {
+                    "id": "additional-insurance",
+                    "title": "Aanvullende verzekering",
+                    "description": "Kies uw aanvullende verzekering.",
+                    "options": [
+                        {
+                            "id": "none",
+                            "label": "Geen",
+                            "value": "none"
+                        },
+                        {
+                            "id": "basic",
+                            "label": "Basis",
+                            "value": "basic"
+                        },
+                        {
+                            "id": "extended",
+                            "label": "Uitgebreid",
+                            "value": "extended"
+                        },
+                        {
+                            "id": "complete",
+                            "label": "Compleet",
+                            "value": "complete"
+                        }
+                    ]
+                },
+                {
+                    "id": "dental-insurance",
+                    "title": "Tandartsverzekering",
+                    "description": "Kies uw tandartsverzekering.",
+                    "options": [
+                        {
+                            "id": "none",
+                            "label": "Geen",
+                            "value": "none"
+                        },
+                        {
+                            "id": "basic",
+                            "label": "Basis",
+                            "value": "basic"
+                        },
+                        {
+                            "id": "extended",
+                            "label": "Uitgebreid",
+                            "value": "extended"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "summary",
+            "title": "Samenvatting",
+            "description": "Controleer uw gegevens en verzekeringsopties.",
+            "sections": [
+                {
+                    "id": "chosen-package",
+                    "title": "Gekozen pakket"
+                },
+                {
+                    "id": "premium-overview",
+                    "title": "Premie overzicht"
+                },
+                {
+                    "id": "personal-details",
+                    "title": "Persoonlijke gegevens"
+                }
+            ]
+        }
+    ]
+}
